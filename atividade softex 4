@@ -1,0 +1,70 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	cadeia nome, endereco, cidade, nomeDoPai, nomeDaMae
+	inteiro CPF, RG, idade
+	real peso, rendaBruta
+
+	
+		escreva("Digite seu nome: ")
+		leia(nome)
+
+		escreva("Digite seu endereco: ")
+		leia(endereco)
+
+		escreva("Digite sua cidade: ")
+		leia(cidade)
+
+		escreva("Digite o nome do seu pai: ")
+		leia(nomeDoPai)
+
+		escreva("Digite o nome da sua mãe: ")
+		leia(nomeDaMae)
+
+		escreva("Digite seu CPF: ")
+		leia(CPF)
+
+		escreva("Digite seu RG: ")
+		leia(RG)
+
+		escreva("Digite sua idade: ")
+		leia(idade)
+
+		escreva("Digite seu peso: ")
+		leia(peso)
+
+		escreva("Digite sua renda bruta: ")
+		leia(rendaBruta)
+
+
+		escreva("seu Nome é: ", nome)
+
+		escreva("seu endereço é: ", endereco)
+
+		escreva("sua cidade é: ", cidade)
+
+		escreva("seu pai é: ", nomeDoPai)
+
+		escreva("sua mãe é: ", nomeDaMae)
+
+		escreva("seu CPF é: ", CPF)
+
+		escreva("seu RG é: ", RG)
+
+		escreva("sua idade é: ", idade)
+
+		escreva("seu peso é: ", peso)
+
+		escreva("sua renda bruta é: ", rendaBruta
+		
+		)
+		
+
+		
+
+
+		
+	}
+}
