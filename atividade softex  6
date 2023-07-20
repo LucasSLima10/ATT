@@ -1,0 +1,29 @@
+var pergunta1
+var pergunta2
+var pergunta3
+var pergunta4
+
+pergunta1 = sim
+
+pergunta2 = sim
+
+pergunta3 = nao
+
+pergunta4 = sim
+
+if (pergunta1 = sim) {
+    console.log("Cabe apenas uma pessoa?")
+   
+    if (pergunta2 = sim){
+        console.log("É pesado?")
+
+    if (pergunta3 = nao){
+        console.log("Tem pedal?")
+
+    if (pergunta4 = sim){
+        console.log("Então, o transporte escolhido foi a bicicleta")
+    }    
+    }    
+    }
+}  
+    
