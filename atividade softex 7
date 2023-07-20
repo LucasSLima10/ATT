@@ -1,0 +1,16 @@
+function tabuada(numero) {
+    console.log(`Tabuada do 5:`);
+    for (let i = 1; i <= 10; i++) {
+      const resultado = numero * i;
+      console.log(`5 x ${i} = ${resultado}`);
+    }
+  }
+  
+  const numeroDigitado = prompt("Digite um número inteiro para a tabuada:");
+  const numeroInteiro = parseInt(numeroDigitado);
+  
+  if (isNaN(numeroInteiro)) {
+    console.log("Por favor, digite um número inteiro válido.");
+  } else {
+    tabuada(numeroInteiro);
+  }
