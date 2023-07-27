@@ -1,0 +1,12 @@
+var N1, N2, media;
+
+
+N1 = Number(window.prompt('digite o primeiro numero'));
+N2 = Number(window.prompt('digite o segundo numero'));
+media = N1 + N2 / 2;
+if (N1 >= N2) {
+  window.alert('aprovado');
+}
+if (N1 < N2) {
+  window.alert('reprovado');
+}
