@@ -1,0 +1,17 @@
+      var QTDrodas = Number = prompt("Quantidades de rodas do veiculo:");
+        var PesoQuilogramas = float = prompt("informe o peso do veiculo:");
+        var QTDpessoas = Number = prompt("Quantas pessoas cabem no veiculo:");
+
+        if (QTDrodas < 4) {
+            alert("CNH categoria A");
+
+     } else if(QTDrodas = 4, QTDpessoas <= 5, PesoQuilogramas <= 3500){
+            alert("CNH categoria B")
+
+        }
+        else if( PesoQuilogramas >= 3500 <= 6000){
+            alert("CNH categoria C")
+     }
+     else if(PesoQuilogramas > 6000) {
+        alert("CNH categoria E");
+     }
