@@ -1,0 +1,11 @@
+var nome, idade, altura, maior_idade;
+
+
+nome = 'Lucas';
+idade = 20;
+altura = 175;
+maior_idade = true;
+window.alert(nome);
+window.alert(idade);
+window.alert(altura);
+window.alert(maior_idade);
