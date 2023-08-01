@@ -1,0 +1,14 @@
+var n1 = prompt("digite a nota 1");
+var n2 = prompt("Digite a nota 2");
+var faltas = prompt("Digite a quantidade de faltas");
+var media = (n1 + n2 %2);
+
+
+if (media >= 7, faltas < 3) {
+ console.log("aprovado");
+}
+
+else {
+  console.log("Reprovado")
+}
+ 
