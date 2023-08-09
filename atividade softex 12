@@ -1,0 +1,7 @@
+var segundos;
+
+
+for (segundos = 1; segundos <= 10; segundos++) {
+  window.alert(segundos);
+}
+window.alert('BUM');
