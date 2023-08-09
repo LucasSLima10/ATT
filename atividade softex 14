@@ -1,0 +1,7 @@
+
+var nome = prompt("Digite seu nome: ");
+var anoNasc = parseInt = prompt("Digite o ano em que nasceu: ");
+
+anoNasc = 2021 - anoNasc ;
+alert("Seu nome é " + nome);
+alert("Sua idade é " + anoNasc);
