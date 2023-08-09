@@ -1,0 +1,10 @@
+var n1, n2, soma, subtracao, multiplicacao, divisao, sair;
+
+
+n1 = Number(window.prompt('Digite o primeiro numero: '));
+n2 = Number(window.prompt('Digite o segundo numero: '));
+soma = n1 + n2;
+subtracao = n1 - n2;
+multiplicacao = n1 * n2;
+divisao = n1 / n2;
+sair = 0;
