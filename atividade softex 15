@@ -1,0 +1,19 @@
+
+  var numCandidato = Number = prompt("Digite o numero do seu candidato: ");
+    if (numCandidato = 889) {
+        alert("Você votou no candidato X ");
+        
+    } else if(numCandidato = 847){
+        alert("Você votou no candidato Y ");
+    }
+
+    else if(numCandidato = 515){
+        alert("Você votou no candidato Z ");
+    }
+    else if(numCandidato = 0){
+        alert("Você votou nulo");
+    }
+
+    else{
+        alert("Operação invalida");
+    }
