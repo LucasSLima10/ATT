@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+var nomes = ["Ana", "Carlos", "Elena", "Fernando", "Gabriela", "Hugo", "Isabel", "João", "Karen", "Lucas"];
+var idades = [25, 32, 28, 40, 22, 29, 37, 31, 26, 34];
+var coresFavoritas = ["azul", "verde", "rosa", "amarelo", "vermelho", "laranja", "roxo", "preto", "branco", "marrom"];
+
+
+console.log("Lista de nomes:", nomes);
+console.log("Lista de idades:", idades);
+console.log("Lista de cores favoritas:", coresFavoritas);
+
+
+idades[3] = 41; 
+coresFavoritas[6] = "azul-marinho"; 
+
+
+console.log("Lista de nomes após modificações:", nomes);
+console.log("Lista de idades após modificações:", idades);
+console.log("Lista de cores favoritas após modificações:", coresFavoritas);
+    </script>
+    
+</body>
+</html>
