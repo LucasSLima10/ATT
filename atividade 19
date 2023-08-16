@@ -1,0 +1,29 @@
+class Pessoa {
+  constructor(nome, idade, filho = null) {
+    this.nome = nome;
+    this.idade = idade;
+    this.filho = filho;
+  }
+}
+
+
+const pessoa1 = new Pessoa("Maria", 35);
+const pessoa2 = new Pessoa("João", 40);
+const pessoa3 = new Pessoa("Ana", 28);
+
+
+pessoa1.filho = pessoa2;
+pessoa2.filho = pessoa3;
+
+
+const primeiraPessoa = pessoa1;
+
+
+let pessoaAtual = primeiraPessoa;
+while (pessoaAtual !== null) {
+  console.log(`Nome: ${pessoaAtual.nome}, Idade: ${pessoaAtual.idade}`);
+  if (pessoaAtual.filho !== null) {
+    console.log(`  Filho: ${pessoaAtual.filho.nome}`);
+  }
+  pessoaAtual = pessoaAtual.filho;
+}
