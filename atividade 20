@@ -1,0 +1,28 @@
+function buscaBinaria(array, alvo) {
+  let esquerda = 0;
+  let direita = array.length - 1;
+
+  while (esquerda <= direita) {
+    const meio = Math.floor((esquerda + direita) / 2);
+
+    if (array[meio] === alvo) {
+      return meio; // Valor encontrado, retorna o índice
+    } else if (array[meio] < alvo) {
+      esquerda = meio + 1; // Valor está à direita do meio
+    } else {
+      direita = meio - 1; // Valor está à esquerda do meio
+    }
+  }
+
+  return -1; // Valor não encontrado
+}
+
+const array = [5, 7, 8, 10, 12, 15, 18, 20, 25, 30];
+const alvo = 20;
+const indiceEncontrado = buscaBinaria(array, alvo);
+
+if (indiceEncontrado !== -1) {
+  console.log(`O valor ${alvo} foi encontrado no índice ${indiceEncontrado}.`);
+} else {
+  console.log(`O valor ${alvo} não foi encontrado no array.`);
+}
