@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>aula softex</h1>
+
+    <p>aula softex</p>
+
+    <link rel="stylesheet" href="download.jfif">
+
+    <a href="https://www.exemplo.com">Visite o Exemplo</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+
+      <div>
+        <p>Conteúdo dentro de uma divisão.</p>
+      </div>
+</body>
+</html>
