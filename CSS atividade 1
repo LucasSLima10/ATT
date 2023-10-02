@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="black">
+    <h1>Ponto Turistico da cidade de Recife-PE</h1>
+    <img class="foto" src="Marco-Zero-Recife-1024x830.jpg"  width="500px">
+    <p>Essa é uma foto do Marco Zero, Ponto turistico de Recife.</p>
+    
+</body>
+</html>
+
+css
+
+.foto{
+margin-left: 300px;
+}
+
+h1, p{
+    margin-left: 300px;
+    color: blue;
+}
