@@ -1,0 +1,11 @@
+function calculadoraMedia(){
+
+    var n1 = prompt = Number("Digite a primeira nota:");
+    var n2 = prompt = Number("Digite a segunda nota:");
+    var n3 = prompt = Number("Digite a terceira nota:");
+    var media;
+
+    media = (n1 + n2 + n3)/3;
+    console.log("Sua Media foi:" + media);
+
+}
