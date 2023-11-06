@@ -1,0 +1,33 @@
+function somar(){
+  var n1;
+  var n2;
+  var soma;
+
+  soma = (n1 + n2);
+}
+
+function soma(n1, n2) {
+ 
+  resultado = n1 + n2;
+  
+ 
+  return resultado;
+}
+
+
+ numero1 = 4;
+ numero2 = 3;
+ somaResul = soma(numero1, numero2);
+
+
+console.log(`A soma de ${numero1} e ${numero2} é igual a ${somaResul}`);
+
+const multiplicacao = (a, b) => {
+ 
+  const resultado = a * b;
+  
+ 
+  return resultado;
+}
+  
+  
