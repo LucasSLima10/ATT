@@ -1,0 +1,42 @@
+class Banco {
+  constructor(numeroConta, saldo, tipoConta, agencia) {
+    this.numeroConta = numeroConta;
+    this.saldo = saldo;
+    this.tipoConta = tipoConta;
+    this.agencia = agencia;
+  }
+
+  
+  buscarSaldo() {
+    return `O saldo da conta ${this.numeroConta} é R$ ${this.saldo.toFixed(2)}`;
+  }
+
+  
+  deposito(valor) {
+    this.saldo += valor;
+    return `Depósito de R$ ${valor.toFixed(2)} realizado com sucesso. Novo saldo: R$ ${this.saldo.toFixed(2)}`;
+  }
+
+  
+  saque(valor) {
+    if (valor > this.saldo) {
+      return "Saldo insuficiente. Operação não realizada.";
+    } else {
+      this.saldo -= valor;
+      return `Saque de R$ ${valor.toFixed(2)} realizado com sucesso. Novo saldo: R$ ${this.saldo.toFixed(2)}`;
+    }
+  }
+
+ 
+  obterNumeroConta() {
+    return `O número da conta é ${this.numeroConta}`;
+  }
+}
+
+
+const minhaConta = new Banco(123456, 1000.0);
+
+console.log(minhaConta.buscarSaldo());
+console.log(minhaConta.deposito(500.0));
+console.log(minhaConta.saque(200.0));
+console.log(minhaConta.obterNumeroConta());
