@@ -1,0 +1,132 @@
+class Carro {
+  constructor(modelo, cor) {
+    this.modelo = modelo;
+    this.cor = cor;
+    this.velocidadeAtual = 0;
+    this.ligado = false;
+  }
+
+  ligar() {
+    this.ligado = true;
+    console.log("Carro ligado.");
+  }
+
+  acelerar(velocidade) {
+    if (this.ligado) {
+      this.velocidadeAtual += velocidade;
+      console.log(`Acelerando para ${this.velocidadeAtual} km/h.`);
+    } else {
+      console.log("Carro desligado. Ligue o carro antes de acelerar.");
+    }
+  }
+
+  parar() {
+    this.velocidadeAtual = 0;
+    console.log("Carro parado.");
+  }
+}
+
+
+const meuCarro = new Carro("Toyota", "Azul");
+meuCarro.ligar();
+meuCarro.acelerar(50);
+meuCarro.parar();
+
+class Livro {
+  constructor(titulo, autor, numPaginas) {
+    this.titulo = titulo;
+    this.autor = autor;
+    this.numPaginas = numPaginas;
+    this.aberto = false;
+  }
+
+  ler() {
+    if (this.aberto) {
+      console.log(`Lendo ${this.titulo} por ${this.autor}.`);
+    } else {
+      console.log("Abra o livro antes de começar a ler.");
+    }
+  }
+
+  abrir() {
+    this.aberto = true;
+    console.log("Livro aberto.");
+  }
+
+  fechar() {
+    this.aberto = false;
+    console.log("Livro fechado.");
+  }
+}
+
+
+const meuLivro = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 1000);
+meuLivro.abrir();
+meuLivro.ler();
+meuLivro.fechar();
+
+class ContaBancaria {
+  constructor(numeroConta, titular) {
+    this.numeroConta = numeroConta;
+    this.titular = titular;
+    this.saldo = 0;
+  }
+
+  depositar(valor) {
+    this.saldo += valor;
+    console.log(`Depósito de ${valor} realizado. Novo saldo: ${this.saldo}`);
+  }
+
+  sacar(valor) {
+    if (valor <= this.saldo) {
+      this.saldo -= valor;
+      console.log(`Saque de ${valor} realizado. Novo saldo: ${this.saldo}`);
+    } else {
+      console.log("Saldo insuficiente para saque.");
+    }
+  }
+
+  consultarSaldo() {
+    console.log(`Saldo atual: ${this.saldo}`);
+  }
+}
+
+
+const minhaConta = new ContaBancaria("123456", "João");
+minhaConta.depositar(1000);
+minhaConta.sacar(500);
+minhaConta.consultarSaldo();
+
+
+class Usuario {
+  constructor(username, email) {
+    this.username = username;
+    this.email = email;
+    this.dataRegistro = new Date();
+    this.logado = false;
+  }
+
+  login() {
+    this.logado = true;
+    console.log(`${this.username} logado.`);
+  }
+
+  logout() {
+    this.logado = false;
+    console.log(`${this.username} deslogado.`);
+  }
+
+  alterarEmail(novoEmail) {
+    this.email = novoEmail;
+    console.log(`Email alterado para ${this.email}`);
+  }
+}
+
+// Exemplo de uso
+const meuUsuario = new Usuario("user123", "user123@email.com");
+meuUsuario.login();
+meuUsuario.alterarEmail("novoemail@email.com");
+meuUsuario.logout();
+
+
+
