@@ -1,0 +1,30 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function divideNumeros() {
+  rl.question('Digite o numerador: ', (numerador) => {
+    rl.question('Digite o denominador: ', (denominador) => {
+      try {
+        
+        const resultado = dividir(parseInt(numerador), parseInt(denominador));
+        console.log(`Resultado da divisão: ${resultado}`);
+      } catch (error) {
+        console.error(`Erro: ${error.message}`);
+      } finally {
+        rl.close();
+      }
+    });
+  });
+}
+
+function dividir(numerador, denominador) {
+  if (denominador === 0) {
+    throw new Error('Divisão por zero não é permitida.');
+  }
+  return numerador / denominador;
+}
+divideNumeros();
